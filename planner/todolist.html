@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>todolist</title>
+    <link rel="stylesheet" type=text/css href="./test.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+  <input type="button" value="추가" onclick="onAddList()">
+  <input type="button" value="검색" onclick="onSearch()">
+  <br><br>
+  <table>
+    <tr><td id="f">가족</td><td id="sc">학교</td></tr>
+    <tr><td id="family" ondrop="drop(event)" ondragover="allowDrop(event)"><ul id=familyList></ul></td><td id="school" ondrop="drop(event)" ondragover="allowDrop(event)"><ul id=schoolList></ul></td></tr>
+    <tr><td id="t">여행</td><td id="sp">운동</td></tr>
+    <tr><td id="travel" ondrop="drop(event)" ondragover="allowDrop(event)"><ul id=travelList></ul></td><td id="sport" ondrop="drop(event)" ondragover="allowDrop(event)"><ul id=sportList></ul></td></tr>
+  </table>
+  <form method=post>
+  <div id="addlist" style="display:none;">
+    할 일 분류:
+    <select id="kind">
+      <option>가족</option>
+      <option>학교</option>
+      <option>여행</option>
+      <option>운동</option>
+    </select><br><br>
+    메모: <input type=text id="memo"><br><br>
+    시작 날짜: <input type="date" id="start_date"><br><br>
+    끝나는 날짜: <input type="date" id="end_date"><br><br>
+    <button type="submit" onclick="submitList()">Submit</button>
+    <input type="button" value="Close" onclick="closeAdd()">
+  </div>
+  <div id="search" style="display:none;">
+    메모 키워드: <input type=text id="keyword"><br><br>
+    시작 날짜: <input type="date" id="start_date_s"><br><br>
+    끝나는 날짜: <input type="date" id="end_date_s"><br><br>
+    정렬 기준:
+    <select id="sort">
+      <option>메모</option>
+      <option>시작 날짜</option>
+      <option>끝나는 날짜</option>
+    </select><br><br>
+    <input type="checkbox" id="down" checked>내림차순<input type="checkbox" id="up">오름차순
+    <input type="button" value="Submit" onclick="searchList()" >
+    <input type="button" value="Close" onclick="closeSearch()">
+  </div>
+  <div id="result_of_search"></div>
+  </form>
+  <script>
+    updateList();
+  </script>
+</body>
+</html>

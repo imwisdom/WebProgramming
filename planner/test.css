@@ -1,0 +1,41 @@
+table, td, th{
+  border : 1px solid black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  z-index:1;
+  table-layout:fixed;
+  word-break:break-all;
+
+}
+table{
+  width:100%;
+}
+td{
+  width:50%;
+}
+td[id="family"],td[id="school"], td[id="sport"], td[id="travel"]{
+  height:200px;
+  text-align: left;
+}
+#addlist, #search{
+  background-color: #CEECF5;
+  width:300px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-150px;
+  margin-top:-150px;
+  padding: 20px;
+  height:240px;
+}
+
+#memo{
+  width: 200px;
+}
+#f, #t{
+  background-color: #F5D0A9;
+}
+#sp, #sc{
+  background-color: #E0F8F7;
+}

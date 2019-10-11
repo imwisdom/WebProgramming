@@ -1,0 +1,61 @@
+body{
+  background-color: #FDEA97;
+}
+/* 쇼핑몰 제목 */
+h2{
+  text-align: center;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
+  font-size: 50px;
+  padding : 10px;
+  background-color: white;
+
+}
+/* 로그인 창 */
+div[id="login"]{
+  border: 5px solid #686662;
+  border-radius: 10px;
+  padding : 20px;
+  width : 250px;
+  height: auto;
+  overflow: hidden;
+  margin :auto;
+  left: 25%;
+  right: 25%;
+  top : 45%;
+  background-color: #FFFCD3;
+
+}
+/* 로그인 버튼 */
+#login_button{
+  width : 70px;
+  float : left;
+  top : 50%;
+  left: 10%;
+  position: relative;
+  background-color: black;
+  border : 1px solid white;
+  color : white;
+  font-weight: bold;
+}
+/* 회원가입 버튼 */
+#signin_button{
+  width : 70px;
+  float : right;
+  top : 50%;
+  right : 10%;
+  position: relative;
+  background-color: black;
+  border : 1px solid white;
+  color : white;
+  font-weight: bold;
+}
+
+
+
+
+/* design_site.html */

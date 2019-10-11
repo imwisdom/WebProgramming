@@ -1,0 +1,132 @@
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: relative;
+  text-align: left;
+}
+th, td{
+  padding: 15px;
+  min-width: 100px;
+  min-height: 100px;
+  width:100px;
+  height:100px;
+}
+p:not(#notice-add){
+   margin: 0 0 0 0;
+}
+th{
+  text-align:center;
+}
+#sun{
+  color: red;
+}
+#sat{
+  color: blue;
+}
+.now, .after, .before{
+  font-style: italic;
+  text-align: left;
+  vertical-align:text-top;
+  font-size: 10px;
+}
+.now{
+  background-color: #96e3ff;
+}
+.after{
+  background-color: #d9e8ce;
+}
+.before{
+  background-color: #e3e4ea;
+}
+ol{
+  list-style-type : none;
+  float : left;
+  padding-left: 0;
+}
+#listbox{
+  font-style: normal;
+  list-style-type : none;
+  font-size: 15px;
+  border: 1px solid black;
+  height:auto;
+  background: #e3e4ea;
+  width: 95px;
+}
+input[type="textarea"]#list{
+  height:auto;
+  width: 80px;
+  border: none;
+  vertical-align: middle;
+  background : #e3e4ea;
+  float:left;
+  color:black;
+}
+.close{
+  float:right;
+  vertical-align: middle;
+}
+/*******/
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content-add{
+  background-color: #fefefe;
+  margin:auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: absolute;
+  left:25px;
+  right:25px;
+  top:40%;
+  bottom:40%;
+  width:250px;
+  height: 100px;
+  border-radius: 3px;
+}
+.modal-content-edit:not(#edittext){
+  background-color: #fefefe;
+  margin:auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  position: absolute;
+  left:25px;
+  right:25px;
+  top:40%;
+  bottom:40%;
+  width:270px;
+  height: 140px;
+  border-radius: 3px;
+}
+#edittext{
+  text-align: left;
+}
+
+
+input[type="text"]#inputPlan{
+  border-radius: 5px;
+  width:200px;
+}
+input[type="date"]#editDate{
+  border-radius: 5px;
+  width:140px;
+}
+input[type="number"]#editOrder{
+  border-radius: 5px;
+  width:50px;
+}
+#add, #cancel{
+  float:none;
+}

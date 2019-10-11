@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Calander</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type=text/css href="./test.css"/>
+  <script src="./test.js"></script>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr><th colspan="7" id="titleOfCal"></th></tr>
+      <tr><th id=sun>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th id=sat>土</th></tr>
+    </thead>
+    <tbody id = "calendar">
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div id="addPlan" class="modal">
+    <div class = "modal-content-add">
+      <p id="notice-add"></p>
+      <input type="text" id="inputPlan"/><br/>
+      <button id="add">Add</button>
+      <button id="cancel">Cancel</button>
+    </div>
+  </div>
+  <div id="editPlan" class="modal">
+    <div class = "modal-content-edit">
+      <p id="notice-edit">일정 변경</p>
+      <br/>
+      <p id="edittext"></p>
+      <br/>
+        <button id="save">Save</button>
+        <button id="delete">Delete</button>
+    </div>
+  </div>
+  <script>
+  calendar();
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+  background-color: #FDEA97;
+}
+/* 회원가입 제목 */
+h3{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
+  font-size: 30px;
+  padding : 10px;
+  background-color: white;
+}
+/* 회원가입 창 */
+div[id="join"]{
+  padding : 20px;
+  width : 300px;
+  height: auto;
+  overflow: hidden;
+  margin :auto;
+  left: 25%;
+  right: 25%;
+  top : 25%;
+  background-color: #FFFCD3;
+  border: 5px solid #686662;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/* 회원가입 버튼 */
+#signin_button{
+  width : 70px;
+  float : right;
+  top : 50%;
+  right : 38%;
+  position: relative;
+}
+#signin_button, #return_login{
+  background-color: black;
+  border : 1px solid white;
+  color : white;
+  font-weight: bold;
+}
